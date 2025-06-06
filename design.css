@@ -1,0 +1,439 @@
+:root {
+  --deep-space: #0d1b2a;
+  --cosmic-blue: #1b263b;
+  --neon-cyan: #00b4d8;
+  --electric-blue: #48cae4;
+  --starlight: #dee2e6;
+  --void-black: #0a0a0a;
+  --dark-matter: #1a1a1a;
+  --senai-orange: #FF6600;
+  --design-purple: #8a2be2; /* Nova cor para elementos de design */
+  --creative-pink: #ff6b6b; /* Nova cor para elementos criativos */
+  --quantum-glow: 0 0 15px rgba(0, 180, 216, 0.7);
+  --design-glow: 0 0 15px rgba(138, 43, 226, 0.5); /* Glow para elementos de design */
+  --creative-glow: 0 0 15px rgba(255, 107, 107, 0.5); /* Glow para elementos criativos */
+  --hyper-speed: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--void-black);
+  color: var(--starlight);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Navbar - Adaptada para Design */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  padding: 2rem 3rem 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(72, 202, 228, 0.1);
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--design-purple), transparent);
+  opacity: 0.7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dee2e6;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+  text-shadow: var(--design-glow);
+}
+
+.logo i {
+  color: var(--design-purple);
+  font-size: 2.2rem;
+  margin-right: 0.5rem;
+  transition: var(--hyper-speed);
+}
+
+.logo:hover i {
+  transform: rotate(-15deg);
+  color: var(--creative-pink);
+}
+
+.logo strong {
+  color: var(--design-purple);
+  font-weight: 700;
+  background: linear-gradient(to right, var(--design-purple), var(--creative-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.0rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--starlight);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  padding: 0.6rem 0.4rem;
+  transition: var(--hyper-speed);
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--design-purple), var(--creative-pink));
+  transition: var(--hyper-speed);
+}
+
+.nav-links a:hover {
+  color: var(--creative-pink);
+  transform: translateY(-3px);
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.nav-links i {
+  font-size: 1.1rem;
+  transition: var(--hyper-speed);
+}
+
+.nav-links a:hover i {
+  transform: scale(1.2);
+  color: var(--creative-pink);
+}
+
+.nav-links .active {
+  color: var(--creative-pink);
+}
+
+.nav-links .active::before {
+  width: 100%;
+}
+
+/* Hero Section - Adaptada para Design */
+.hero-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary, .btn-tertiary, .btn-quarto {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--hyper-speed);
+}
+
+.btn-primary {
+  background: transparent;
+  color: white;
+  border: 2px solid var(--design-purple);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(138, 43, 226, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background: rgba(138, 43, 226, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(138, 43, 226, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid var(--creative-pink);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 107, 107, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 107, 107, 0.3);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+.btn-tertiary {
+  background: transparent;
+  color: white;
+  border: 2px solid var(--neon-cyan);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 180, 216, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-tertiary:hover {
+  background: rgba(0, 180, 216, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 180, 216, 0.3);
+}
+
+.btn-tertiary:active {
+  transform: translateY(0);
+}
+
+.btn-quarto {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid var(--senai-orange);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-quarto:hover {
+  background: rgba(255, 102, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 102, 0, 0.3);
+}
+
+.btn-quarto:active {
+  transform: translateY(0);
+}
+
+/* Content Sections - Adaptadas para Design */
+.content-section {
+  padding: 4rem 2rem;
+  background-color: var(--dark-matter);
+}
+
+.dark-section {
+  background-color: var(--void-black);
+  padding: 4rem 2rem;
+}
+
+.content-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-side {
+  flex: 1;
+}
+
+.image-side {
+  flex: 1;
+  text-align: center;
+}
+
+.content-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: var(--hyper-speed);
+}
+
+.content-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.image-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-style: italic;
+}
+
+.highlight-box {
+  background: rgba(138, 43, 226, 0.1);
+  border-left: 3px solid var(--design-purple);
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  transition: var(--hyper-speed);
+}
+
+.highlight-box:hover {
+  background: rgba(138, 43, 226, 0.15);
+  box-shadow: var(--design-glow);
+}
+
+.highlight-box i {
+  color: var(--design-purple);
+  margin-right: 0.5rem;
+}
+
+.quote-author {
+  text-align: right;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: var(--creative-pink);
+}
+
+/* Contributions Grid - Adaptado para Design */
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contribution-card {
+  background: rgba(30, 30, 30, 0.8);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: var(--hyper-speed);
+  border-bottom: 3px solid transparent;
+}
+
+.contribution-card:hover {
+  border-bottom-color: var(--design-purple);
+  transform: translateY(-5px);
+  box-shadow: var(--design-glow);
+}
+
+.contribution-icon {
+  font-size: 2rem;
+  color: var(--design-purple);
+  margin-bottom: 1rem;
+}
+
+.contribution-card h3 {
+  color: var(--creative-pink);
+  margin-bottom: 0.8rem;
+}
+
+/* Typography Examples */
+.typography-examples {
+  margin: 1.5rem 0;
+}
+
+.font-sample {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 8px;
+  border-left: 3px solid var(--design-purple);
+}
+
+.font-sample h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--creative-pink);
+}
+
+/* Presentation Section - Adaptada para Design */
+.presentation-section {
+  padding: 4rem 2rem;
+  background-color: var(--dark-matter);
+}
+
+.presentation-content {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.presentation-text {
+  flex: 1;
+}
+
+.presentation-preview {
+  flex: 1;
+  text-align: center;
+}
+
+.presentation-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: var(--hyper);
+}

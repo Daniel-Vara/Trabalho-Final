@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware & Software</title>
+    <link rel="stylesheet" href="ware.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-code"></i>
+      <span>Trajetória <strong>SENAI</strong></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="introdução.html"><i class="fas fa-handshake"></i> Introdução Senai</a>
+      <a href="alan.html"><i class="fas fa-microchip"></i> Alan Turing</a>
+      <a href="ware.html"><i class="fas fa-desktop"></i> Hard & Software</a>
+      <a href="design.html"><i class="fas fa-pen-nib"></i> Design</a>
+      <a href="figma.html"><i class="fab fa-figma"></i> FIGMA</a>
+      <a href="git.html"><i class="fab fa-github"></i> GitHub</a>
+      <a href="HC.html"><i class="fab fa-html5"></i> HTML & CSS</a>
+    </nav>
+  </header>
+
+  <section class="hardware-hero">
+    <div class="container">
+      <h1><i class="fas fa-desktop"></i> Hardware & Software</h1>
+      <p class="hardware-subtitle">Explorando os fundamentos da computação moderna</p>
+      <div class="hero-buttons">
+        <a href="#hardware" class="btn-primary">Componentes</a>
+        <a href="#software" class="btn-secondary">Sistemas</a>
+        <a href="#projetos" class="btn-tertiary">Projetos</a>
+        <a href="#galeria" class="btn-quarto">Galeria</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="hardware" class="component-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-microchip"></i> Componentes de Hardware</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <p>Estudamos os principais componentes que formam um computador, suas funções e como interagem para processar informações. Cada peça tem um papel crucial no desempenho geral do sistema.</p>
+      
+      <div class="component-grid">
+        <!-- CPU -->
+        <div class="component-card">
+          <img src="./img/CPU.jpg" alt="Processador" class="component-image">
+          <div class="component-content">
+            <h3><i class="fas fa-brain"></i> Processador (CPU)</h3>
+            <p>O cérebro do computador, responsável por executar instruções e processar dados. Determina a velocidade geral do sistema.</p>
+            <div class="component-specs">
+              <div class="spec-item">
+                <span class="spec-name">Núcleos:</span>
+                <span>4-16</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Clock:</span>
+                <span>3.0-5.0 GHz</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Fabricantes:</span>
+                <span>Intel, AMD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- GPU -->
+        <div class="component-card">
+          <img src="./img/Placa de Vídeo.png" alt="Placa de Vídeo" class="component-image">
+          <div class="component-content">
+            <h3><i class="fas fa-gamepad"></i> Placa de Vídeo (GPU)</h3>
+            <p>Processa gráficos e imagens, essencial para jogos, edição de vídeo e aplicações de machine learning.</p>
+            <div class="component-specs">
+              <div class="spec-item">
+                <span class="spec-name">VRAM:</span>
+                <span>4-24 GB</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Fabricantes:</span>
+                <span>NVIDIA, AMD</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Interfaces:</span>
+                <span>PCIe 3.0/4.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- RAM -->
+        <div class="component-card">
+          <img src="./img/Memória RAM.webp" alt="Memória RAM" class="component-image">
+          <div class="component-content">
+            <h3><i class="fas fa-memory"></i> Memória RAM</h3>
+            <p>Armazena dados temporários para acesso rápido pela CPU. Mais RAM permite multitarefa eficiente.</p>
+            <div class="component-specs">
+              <div class="spec-item">
+                <span class="spec-name">Capacidade:</span>
+                <span>8-64 GB</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Velocidade:</span>
+                <span>2400-5600 MHz</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Tipo:</span>
+                <span>DDR4/DDR5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="software" class="software-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-code"></i> Sistemas Operacionais</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <p>Exploramos os diferentes sistemas operacionais, suas características e aplicações. Cada sistema tem vantagens específicas para diferentes cenários de uso.</p>
+      
+      <div class="software-tabs">
+        <div class="software-tab active" data-tab="windows">Windows</div>
+        <div class="software-tab" data-tab="linux">Linux</div>
+        <div class="software-tab" data-tab="comparison">Comparação</div>
+      </div>
+      
+      <div class="software-content active" id="windows-content">
+        <h3><i class="fab fa-windows"></i> Microsoft Windows</h3>
+        <p>O sistema operacional mais popular para computadores pessoais, conhecido por sua interface amigável e ampla compatibilidade com softwares.</p>
+        <ul class="agile-list">
+          <li><i class="fas fa-check-circle"></i> Amplo suporte a hardware e software comercial</li>
+          <li><i class="fas fa-check-circle"></i> Interface gráfica intuitiva</li>
+          <li><i class="fas fa-check-circle"></i> Ideal para jogos e aplicações empresariais</li>
+          <li><i class="fas fa-check-circle"></i> Atualizações regulares de segurança</li>
+        </ul>
+      </div>
+      
+      <div class="software-content" id="linux-content">
+        <h3><i class="fab fa-linux"></i> GNU/Linux</h3>
+        <p>Sistema operacional de código aberto, altamente personalizável e estável, muito usado em servidores e desenvolvimento.</p>
+        <ul class="agile-list">
+          <li><i class="fas fa-check-circle"></i> Gratuito e de código aberto</li>
+          <li><i class="fas fa-check-circle"></i> Alta estabilidade e segurança</li>
+          <li><i class="fas fa-check-circle"></i> Leve e eficiente em hardware antigo</li>
+          <li><i class="fas fa-check-circle"></i> Amplamente usado em servidores e IoT</li>
+        </ul>
+      </div>
+      
+      <div class="software-content" id="comparison-content">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Windows</th>
+              <th>Linux</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Custo</td>
+              <td>Pago (exceto versões básicas)</td>
+              <td>Gratuito</td>
+            </tr>
+            <tr>
+              <td>Segurança</td>
+              <td>Boa (alvo frequente de malware)</td>
+              <td>Excelente (arquitetura de permissões)</td>
+            </tr>
+            <tr>
+              <td>Customização</td>
+              <td>Limitada</td>
+              <td>Total</td>
+            </tr>
+            <tr>
+              <td>Suporte a Jogos</td>
+              <td>Excelente</td>
+              <td>Melhorando (via Proton/Steam)</td>
+            </tr>
+            <tr>
+              <td>Uso em Servidores</td>
+              <td>Moderado (especialmente empresas)</td>
+              <td>Dominante (75% dos servidores web)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-laptop-code"></i> Projetos Práticos</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <p>Desenvolvemos projetos práticos para aplicar os conceitos aprendidos, desde montagem de computadores até configuração de sistemas operacionais.</p>
+      
+      <div class="project-cards">
+        <!-- Projeto 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Computador para Estudo</h3>
+            <p class="project-budget">Orçamento: R$ 3.000</p>
+          </div>
+          <div class="project-body">
+            <p>Criar um computador para atividades básicas como navegação,
+videoconferências, programação e trabalhos acadêmicos.</p>
+            <ul class="project-specs">
+              <li><i class="fas fa-microchip"></i> CPU: Intel Core i5-12400F</li>
+              <li><i class="fas fa-memory"></i> RAM: Primetek, 8GB DDR4 3200MHz</li>
+              <li><i class="fas fa-hdd"></i> Armazenamento: HD 1TB</li>
+              <li><i class="fas fa-desktop"></i> Fonte: 500W</li>
+            </ul>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+        <!-- Projeto 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Computador Gamer</h3>
+            <p class="project-budget">Orçamento: R$ 5.000</p>
+          </div>
+          <div class="project-body">
+            <p>Criar um computador para rodar jogos como Valorant, GTA V e
+Cyberpunk 2077.</p>
+            <ul class="project-specs">
+              <li><i class="fas fa-microchip"></i> CPU: Intel Core i5-12400F</li>
+              <li><i class="fas fa-memory"></i> RAM: Rise Mode, 32GB DDR4 3600MHz</li>
+              <li><i class="fas fa-hdd"></i> Armazenamento: Kingston SSD 1TB </li>
+              <li><i class="fas fa-gamepad"></i> GPU: GALAX GeForce GTX 1650 4GB</li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        
+        <!-- Projeto 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Computador para Trabalho Profissional</h3>
+            <p class="project-budget">Orçamento: R$ 7.000</p>
+          </div>
+          <div class="project-body">
+            <p>Criar um computador para edição de fotos, vídeos, renderização
+3D e streaming.</p>
+            <ul class="project-specs">
+              <li><i class="fas fa-microchip"></i> CPU: Intel Core i5-12400F</li>
+              <li><i class="fas fa-memory"></i> RAM: 2x Rise Mode, 32GB DDR4 3600MHz</li>
+              <li><i class="fas fa-hdd"></i> Armazenamento: Kingston SSD 2TB </li>
+              <li><i class="fas fa-video"></i> GPU: GALAX GeForce GTX 1650 4GB</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-diagram-project"></i> Metodologias Ágeis</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <p>Registro dos nossos projetos práticos e atividades desenvolvidas durante o curso.</p>
+      
+      <div class="gallery-grid">
+        <!-- Adicione suas imagens aqui -->
+        <div class="gallery-item">
+          <img src="img/Cascata.png" alt="Sistema de cascata" class="gallery-image">
+          <div class="gallery-caption">Divisão das tarefas em etapas predeterminadas, que são executadas
+de forma sequencial.</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="img/PMD.png" alt="Pricípios da Metodologia Ágil" class="gallery-image">
+          <div class="gallery-caption">Conjunto de práticas que se
+concentra em entregar valor para o cliente de
+forma rápida e eficiente.</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="img/Scrum.png" alt="Papéis do Scrum" class="gallery-image">
+          <div class="gallery-caption">Abordagem ágil para gerenciamento de projetos</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="img/Kanban.png" alt="Kanban" class="gallery-image">
+          <div class="gallery-caption">Técnica de gerenciamento de projetos e produção</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Daniel Vara</h3>
+        <p>Desenvolvendo soluções criativas e eficientes para a web.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <div class="link-columns">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="introdução.html">Introdução</a></li>
+            <li><a href="alan.html">Alan Turing</a></li>
+            <li><a href="ware.html">Hard & Software</a></li>
+          </ul>
+          <ul>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="figma.html">FIGMA</a></li>
+            <li><a href="HC.html">HTML & CSS</a></li>
+            <li><a href="certificados.html">Certificados</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Conecte-se</h3>
+        <div class="social-links">
+          <a href="https://github.com/Daniel-Vara" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/daniel-vara-dos-santos-ribeiro-890403352/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/daniielvsr/?next=%2F" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Daniel Vara. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script para as abas de software
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.software-tab');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remove active class from all tabs and contents
+          document.querySelectorAll('.software-tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.software-content').forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab
+          this.classList.add('active');
+          
+          // Show corresponding content
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(`${tabId}-content`).classList.add('active');
+        });
+      });
+    });
+  </script>
+    
+</body>
+</html>
