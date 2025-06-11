@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub - Trajetória SENAI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="git.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-code"></i>
+      <span>Trajetória <strong>SENAI</strong></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="introdução.html"><i class="fas fa-handshake"></i> Introdução Senai</a>
+      <a href="alan.html"><i class="fas fa-microchip"></i> Alan Turing</a>
+      <a href="ware.html"><i class="fas fa-desktop"></i> Hard & Software</a>
+      <a href="design.html"><i class="fas fa-pen-nib"></i> Design</a>
+      <a href="figma.html"><i class="fab fa-figma"></i> FIGMA</a>
+      <a href="git.html" class="active"><i class="fab fa-github"></i>GitHub</a>
+      <a href="HC.html"><i class="fab fa-html5"></i> HTML & CSS</a>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="background: linear-gradient(rgba(13, 27, 42, 0.9), rgba(13, 27, 42, 0.9)), url('https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=2070&auto=format&fit=crop') center/cover;">
+    <div class="container">
+      <h1 class="glow-text"><i class="fab fa-github"></i> GitHub </h1>
+      <p class="subtitle">A plataforma essencial para controle de versão e colaboração em projetos</p>
+      <div class="hero-buttons">
+        <a href="#introducao" class="btn-primary">Introdução</a>
+        <a href="#comandos" class="btn-secondary">Comandos</a>
+        <a href="#workflow" class="btn-tertiary">Fluxo de Trabalho</a>
+        <a href="#recursos" class="btn-quarto">Recursos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="introducao">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fab fa-github"></i> O que é GitHub?</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="content-flex">
+        <div class="text-side">
+          <p>O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que desenvolvedores colaborem em projetos de qualquer lugar do mundo.</p>
+          
+          <div class="highlight-box">
+            <p><i class="fas fa-quote-left"></i> GitHub é mais que uma ferramenta - é a rede social dos desenvolvedores e o maior repositório de código aberto do mundo.<i class="fas fa-quote-right"></i></p>
+            <p class="quote-author">- Comunidade Dev</p>
+          </div>
+          
+          <h3>Principais benefícios:</h3>
+          <ul class="presentation-list">
+            <li><i class="fas fa-check-circle"></i> Controle de versão eficiente</li>
+            <li><i class="fas fa-check-circle"></i> Colaboração em equipe</li>
+            <li><i class="fas fa-check-circle"></i> Portfólio de projetos</li>
+            <li><i class="fas fa-check-circle"></i> Integração contínua (CI/CD)</li>
+            <li><i class="fas fa-check-circle"></i> Comunidade open-source</li>
+          </ul>
+        </div>
+        
+        <div class="image-side">
+          <img src="./img/Terminal GIT.png" alt="Interface do GitHub" class="content-image floating">
+          <p class="image-caption">Interface web do GitHub mostrando repositórios</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="comandos">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-terminal"></i> Comandos Git Essenciais</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="commands-grid">
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h3>git init</h3>
+          <p>Inicializa um novo repositório Git em um diretório local.</p>
+          <div class="code-box">
+            <code>git init</code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-clone"></i>
+          </div>
+          <h3>git clone</h3>
+          <p>Clona um repositório existente para sua máquina local.</p>
+          <div class="code-box">
+            <code>git clone https://github.com/usuario/repositorio.git</code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <h3>git add</h3>
+          <p>Adiciona alterações ao staging area para o próximo commit.</p>
+          <div class="code-box">
+            <code>git add . <span class="comment"># Todos os arquivos</span></code><br>
+            <code>git add arquivo.js <span class="comment"># Arquivo específico</span></code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-save"></i>
+          </div>
+          <h3>git commit</h3>
+          <p>Registra as alterações no histórico do repositório.</p>
+          <div class="code-box">
+            <code>git commit -m "mensagem descritiva"</code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-upload"></i>
+          </div>
+          <h3>git push</h3>
+          <p>Envia commits locais para o repositório remoto.</p>
+          <div class="code-box">
+            <code>git push origin main</code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-download"></i>
+          </div>
+          <h3>git pull</h3>
+          <p>Obtém as alterações mais recentes do repositório remoto.</p>
+          <div class="code-box">
+            <code>git pull origin main</code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-code-merge"></i>
+          </div>
+          <h3>git merge</h3>
+          <p>Combina alterações de diferentes branches.</p>
+          <div class="code-box">
+            <code>git merge nome-da-branch</code>
+          </div>
+        </div>
+        
+        <div class="command-card">
+          <div class="command-icon pulse">
+            <i class="fas fa-history"></i>
+          </div>
+          <h3>git log</h3>
+          <p>Exibe o histórico de commits do repositório.</p>
+          <div class="code-box">
+            <code>git log --oneline --graph</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-project-diagram"></i> Fluxo de Trabalho (Workflow)</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="content-flex reverse">
+        <div class="image-side">
+          <img src="./img/Modelo de Fluxo GitHub.png" alt="Git Workflow" class="content-image zoom-effect">
+          <p class="image-caption">Fluxo de trabalho comum com Git/GitHub</p>
+        </div>
+        
+        <div class="text-side">
+          <h3>Fluxo de Trabalho Básico</h3>
+          <p>Um fluxo de trabalho típico no GitHub envolve:</p>
+          
+          <div class="workflow-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Criar um branch</h4>
+                <p>Trabalhe em uma nova funcionalidade ou correção em um branch separado.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Fazer commits</h4>
+                <p>Salve suas alterações com mensagens descritivas.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Enviar para o GitHub</h4>
+                <p>Use push para enviar seu branch para o repositório remoto.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Abrir Pull Request</h4>
+                <p>Solicite a revisão e merge de suas alterações.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>Revisão e Merge</h4>
+                <p>Após aprovação, as alterações são incorporadas ao código principal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="recursos">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-tools"></i> Recursos do GitHub</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="resources-grid">
+        <div class="resource-card slide-in">
+          <div class="resource-icon">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h3>Branches</h3>
+          <p>Linhas de desenvolvimento isoladas para trabalhar em features ou correções sem afetar o código principal.</p>
+        </div>
+        
+        <div class="resource-card slide-in">
+          <div class="resource-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <h3>Pull Requests</h3>
+          <p>Solicitações para incorporar alterações de um branch em outro, com revisão de código.</p>
+        </div>
+        
+        <div class="resource-card slide-in">
+          <div class="resource-icon">
+            <i class="fas fa-bug"></i>
+          </div>
+          <h3>Issues</h3>
+          <p>Sistema de rastreamento de bugs, melhorias e tarefas do projeto.</p>
+        </div>
+        
+        <div class="resource-card slide-in">
+          <div class="resource-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>GitHub Actions</h3>
+          <p>Automatize testes, builds e deploys com CI/CD integrado.</p>
+        </div>
+        
+        <div class="resource-card slide-in">
+          <div class="resource-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>GitHub Pages</h3>
+          <p>Hospedagem gratuita para sites estáticos diretamente do repositório.</p>
+        </div>
+        
+        <div class="resource-card slide-in">
+          <div class="resource-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Colaboração</h3>
+          <p>Controle de acesso granular, revisão de código e discussões.</p>
+        </div>
+      </div>
+      
+      <div class="highlight-box" style="margin-top: 2rem;">
+        <p><i class="fas fa-lightbulb"></i> O GitHub oferece muitos outros recursos como Projects, Wiki, Security alerts e muito mais. Explore a documentação oficial para descobrir tudo!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Daniel Vara</h3>
+        <p>Desenvolvendo soluções criativas e eficientes para a web.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <div class="link-columns">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="introdução.html">Introdução</a></li>
+            <li><a href="alan.html">Alan Turing</a></li>
+            <li><a href="ware.html">Hard & Software</a></li>
+          </ul>
+          <ul>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="figma.html">FIGMA</a></li>
+            <li><a href="git.html">GitHub</a></li>
+            <li><a href="HC.html">HTML & CSS</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Conecte-se</h3>
+        <div class="social-links">
+          <a href="https://github.com/Daniel-Vara" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/daniel-vara-dos-santos-ribeiro-890403352/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/daniielvsr/?next=%2F" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Daniel Vara. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

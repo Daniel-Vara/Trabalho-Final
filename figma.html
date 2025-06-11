@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma - Trajetória SENAI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="figma.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-code"></i>
+      <span>Trajetória <strong>SENAI</strong></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="introdução.html"><i class="fas fa-handshake"></i> Introdução Senai</a>
+      <a href="alan.html"><i class="fas fa-microchip"></i> Alan Turing</a>
+      <a href="ware.html"><i class="fas fa-desktop"></i> Hard & Software</a>
+      <a href="design.html"><i class="fas fa-pen-nib"></i> Design</a>
+      <a href="figma.html" class="active"><i class="fab fa-figma"></i> FIGMA</a>
+      <a href="git.html"><i class="fab fa-github"></i>GitHub</a>
+      <a href="HC.html"><i class="fab fa-html5"></i> HTML & CSS</a>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="background: linear-gradient(rgba(13, 27, 42, 0.9), rgba(13, 27, 42, 0.9)), url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop') center/cover;">
+    <div class="container">
+      <h1 class="glow-text"><i class="fab fa-figma"></i> Dominando o Figma</h1>
+      <p class="subtitle">A ferramenta essencial para design de interfaces e prototipagem</p>
+      <div class="hero-buttons">
+        <a href="#introducao" class="btn-primary">Introdução</a>
+        <a href="#ferramentas" class="btn-secondary">Ferramentas</a>
+        <a href="#projetos" class="btn-tertiary">Projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="introducao">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fab fa-figma"></i> O que é o Figma?</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="content-flex">
+        <div class="text-side">
+          <p>O Figma é uma ferramenta de design de interface baseada na nuvem que permite criar, colaborar e prototipar designs de forma eficiente. Ele se destaca por:</p>
+          
+          <ul class="presentation-list">
+            <li><i class="fas fa-check-circle"></i> Trabalho colaborativo em tempo real</li>
+            <li><i class="fas fa-check-circle"></i> Não requer instalação (funciona no navegador)</li>
+            <li><i class="fas fa-check-circle"></i> Prototipagem interativa</li>
+            <li><i class="fas fa-check-circle"></i> Sistema de design com componentes reutilizáveis</li>
+            <li><i class="fas fa-check-circle"></i> Integração com outras ferramentas</li>
+          </ul>
+          
+          <div class="highlight-box">
+            <p><i class="fas fa-quote-left"></i> O Figma revolucionou a forma como designers trabalham, tornando a colaboração tão fácil quanto editar um documento no Google Docs.<i class="fas fa-quote-right"></i></p>
+            <p class="quote-author">- Designers do SENAI</p>
+          </div>
+        </div>
+        
+        <div class="image-side">
+          <img src="./img/Figma.png" alt="Interface do Figma" class="content-image floating">
+          <p class="image-caption">Interface do Figma </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="ferramentas">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-tools"></i> Principais Ferramentas</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="contributions-grid">
+        <div class="contribution-card">
+          <div class="contribution-icon">
+            <i class="fas fa-pen-fancy"></i>
+          </div>
+          <h3>Frame</h3>
+          <p>Área de trabalho que define o tamanho do seu design (como telas de dispositivos). Fundamental para organizar seu projeto.</p>
+        </div>
+        
+        <div class="contribution-card">
+          <div class="contribution-icon">
+            <i class="fas fa-shapes"></i>
+          </div>
+          <h3>Formas</h3>
+          <p>Retângulos, elipses, polígonos e linhas. A base para criar qualquer elemento de interface.</p>
+        </div>
+        
+        <div class="contribution-card">
+          <div class="contribution-icon">
+            <i class="fas fa-text-height"></i>
+          </div>
+          <h3>Texto</h3>
+          <p>Adicione e estilize textos com diversas opções de fontes, tamanhos e espaçamentos.</p>
+        </div>
+        
+        <div class="contribution-card">
+          <div class="contribution-icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          <h3>Components</h3>
+          <p>Crie elementos reutilizáveis que podem ser instanciados em todo o projeto, mantendo consistência.</p>
+        </div>
+        
+        <div class="contribution-card">
+          <div class="contribution-icon">
+            <i class="fas fa-sliders-h"></i>
+          </div>
+          <h3>Auto Layout</h3>
+          <p>Ferramenta poderosa para criar designs responsivos que se adaptam ao conteúdo.</p>
+        </div>
+        
+        <div class="contribution-card">
+          <div class="contribution-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Prototype</h3>
+          <p>Transforme seus designs em protótipos interativos que simulam a experiência do usuário.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="presentation-section" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-folder-open"></i> Nossos Projetos no Figma</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="projects-container">
+        <div class="project-item">
+          <div class="project-preview">
+            <img src="./img/FIC.png" alt="Primeiro Projeto" class="project-image zoom-effect">
+            <div class="project-links">
+              <a href="https://www.figma.com/proto/UvNsxhgJNzPcHCFtOGSo9T/FIC?node-id=0-1&t=5w87mgE0jqseyWw4-1" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-description">
+       
+  <h3>Primeiro Projeto</h3>
+  <p>Nessa primeira atividade, desenvolvemos três criações fundamentais para aplicar os conceitos de design visual:</p>
+  <ul>
+    <li>Uma logo criada no Figma;</li>
+    <li>O design da interface de uma calculadora;</li>
+    <li>Um cartão de visitas com tema livre, incluindo frente e verso.</li>
+  </ul>
+</div>
+
+        </div>
+        
+        <div class="project-item reverse">
+          <div class="project-preview">
+            <img src="./img/trajetória.png" alt="Primeiro Trabalho Trimestral" class="project-image zoom-effect">
+            <div class="project-links">
+              <a href="https://www.figma.com/proto/RZVxPFPYs0V2qbklB1vFLU/Senai?t=VpF7CnkPemDpcrOA-1" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+      <div class="project-description">
+  <h3>1ª Atividade Trimestral – Fundamentos do Design</h3>
+  <p>
+    Nesta primeira atividade do trimestre, desenvolvemos três projetos com foco em fundamentos essenciais do design gráfico e digital. O objetivo era aplicar conceitos de identidade visual, tipografia, cores e composição através de diferentes formatos:
+  </p>
+  <ul>
+    <li><strong>Criar a logo do Figma;</strong></li>
+    <li><strong>Interface de uma calculadora;</strong> </li>
+    <li><strong>Cartão de visitas - Tema livre (frente e verso).</strong> </li>
+  </ul>
+  <p>
+    A atividade permitiu experimentar ferramentas do Figma, entender a importância da construção visual coerente e exercitar a criatividade dentro de restrições funcionais.
+  </p>
+</div>
+
+</div>
+        </div>
+        
+        <div class="project-item">
+          <div class="project-preview">
+            <img src="./img/Twisty Serpent.png" alt="Segundo Trabalho Trimestral" class="project-image zoom-effect">
+            <div class="project-links">
+              <a href="https://www.figma.com/proto/vMC9VKOeQgQXp09eW60w2V/Twisty-Serpent?t=jq525iGzfOxMTwKn-1" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+        <div class="project-description">
+  <h3>2ª Atividade Trimestral – Twisty Serpent</h3>
+  <p>
+    Para esta atividade com tema livre, desenvolvi o <strong>Twisty Serpent</strong>, um jogo inspirado no clássico Snake, com foco em design de interface e interações animadas. O objetivo era aplicar os conhecimentos adquiridos sobre prototipagem, animação e princípios de design visual.
+  </p>
+  <ul>
+    <li>Criação de 10 frames com interações funcionais</li>
+    <li>Utilização de animações com eventos como <em>On Drag</em>, <em>Key Press</em> e <em>While Scrolling</em></li>
+    <li>Aplicação da teoria das cores, tipografia e princípios da Gestalt</li>
+    <li>Design responsivo com layout adaptável e hierarquia visual clara</li>
+    <li>Inclusão de microinterações, sistema de login, missões e feedback visual</li>
+  </ul>
+</div>
+
+        </div>
+        
+        <div class="project-item reverse">
+          <div class="project-preview">
+            <img src="./img/Importância do FIGMA.png" alt="Projeto 4" class="project-image zoom-effect">
+            <div class="project-links">
+              <a href="https://www.figma.com/proto/GLvkXPjCGjvHSs9X4cV2qM/Import%C3%A2ncia-FIGMA?t=yUEtLtoyBmvRDC11-1" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+         <div class="project-description">
+  <h3>3ª Atividade Trimestral – Animação sobre o Figma</h3>
+  <p>
+    Esta atividade teve como objetivo criar uma narrativa interativa em Figma com, no mínimo, 12 frames animados, explicando a importância da ferramenta e suas principais funcionalidades. O foco foi integrar animações avançadas com conceitos teóricos aprendidos durante o trimestre.
+  </p>
+  <ul>
+    <li><strong>Animações aplicadas:</strong> Smart Animate, Push e Slide In;</li>
+    <li><strong>Interações utilizadas:</strong> On Click, While Hovering, After Delay, Mouse Enter e Mouse Leave;</li>
+    <li><strong>Temas abordados:</strong> Design, Prototipagem, Plugins, Interatividade, Acessibilidade e Atalhos no Figma;</li>
+    <li><strong>Conceitos aplicados:</strong> Tipografia, Teoria das Cores, Princípios de Gestalt e hierarquia visual.</li>
+  </ul>
+  <p>
+    O resultado foi uma apresentação dinâmica e didática que evidencia o potencial do Figma como ferramenta de design colaborativo e prototipagem.
+  </p>
+</div>
+        </div>
+        
+        <div class="project-item">
+          <div class="project-preview">
+            <img src="./img/AZEEL.png" alt="Projeto 5" class="project-image zoom-effect">
+            <div class="project-links">
+              <a href="https://www.figma.com/proto/tXUpU2pZCkKUvVtD6dbVv8/Azeel?t=yUEtLtoyBmvRDC11-1" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+     <div class="project-description">
+  <h3>Protótipo de App de Música – AZEEL</h3>
+  <p>
+    O projeto teve como objetivo criar um protótipo de baixa fidelidade para um app de música com identidade própria. A proposta do <strong>AZEEL</strong> é oferecer uma experiência simples e moderna, inspirada em plataformas como Spotify e Deezer.
+  </p>
+  <ul>
+    <li><strong>Conceito:</strong> Interface escura com foco em recomendações personalizadas e navegação rápida.</li>
+    <li><strong>Identidade visual:</strong> Logo azul, fundo escuro, tipografia moderna.</li>
+    <li><strong>Telas:</strong> Login, cadastro, home, player, busca, perfil e configurações.</li>
+    <li><strong>UX:</strong> Fluxos simples, menu fixo e usabilidade clara.</li>
+  </ul>
+  <p>
+    O protótipo será refinado no Figma com melhorias visuais e interativas na próxima etapa.
+  </p>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Daniel Vara</h3>
+      <p>Desenvolvendo soluções criativas e eficientes para a web.</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Links Rápidos</h3>
+      <div class="link-columns">
+
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="introdução.html">Introdução</a></li>
+        <li><a href="alan.html">Alan Turing</a></li>
+        <li><a href="ware.html">Hard & Software</a></li>
+    </ul>
+      <ul>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="figma.html">FIGMA</a></li>
+        <li><a href="git.html">GitHub</a></li>
+        <li><a href="HC.html">HTML & CSS</a></li>
+      </ul>
+      </div>
+      
+    </div>
+    
+    <div class="footer-section">
+      <h3>Conecte-se</h3>
+      <div class="social-links">
+        <a href="https://github.com/Daniel-Vara" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/daniel-vara-dos-santos-ribeiro-890403352/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/daniielvsr/?next=%2F" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Daniel Vara. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>

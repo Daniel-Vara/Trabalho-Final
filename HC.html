@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS - Trajetória SENAI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="hc.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-code"></i>
+      <span>Trajetória <strong>SENAI</strong></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="introdução.html"><i class="fas fa-handshake"></i> Introdução Senai</a>
+      <a href="alan.html"><i class="fas fa-microchip"></i> Alan Turing</a>
+      <a href="ware.html"><i class="fas fa-desktop"></i> Hard & Software</a>
+      <a href="design.html"><i class="fas fa-pen-nib"></i> Design</a>
+      <a href="figma.html"><i class="fab fa-figma"></i> FIGMA</a>
+      <a href="git.html"><i class="fab fa-github"></i>GitHub</a>
+      <a href="HC.html" class="active"><i class="fab fa-html5"></i> HTML & CSS</a>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="background: linear-gradient(rgba(13, 27, 42, 0.9), rgba(13, 27, 42, 0.9)), url('https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1964&auto=format&fit=crop') center/cover;">
+    <div class="container">
+      <h1 class="glow-text"><i class="fab fa-html5"></i> HTML & <i class="fab fa-css3-alt"></i> CSS</h1>
+      <p class="subtitle">Os pilares fundamentais do desenvolvimento web moderno</p>
+      <div class="hero-buttons">
+        <a href="#historia" class="btn-primary">História</a>
+        <a href="#html" class="btn-secondary">HTML</a>
+        <a href="#css" class="btn-tertiary">CSS</a>
+        <a href="#projetos" class="btn-quarto">Projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="historia">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-history"></i> Breve História</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="content-flex">
+        <div class="text-side">
+          <p>HTML (HyperText Markup Language) e CSS (Cascading Style Sheets) são as tecnologias base da web. Sua evolução moldou a internet como conhecemos hoje.</p>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">1991</div>
+              <div class="timeline-content">
+                <h3>Nascimento do HTML</h3>
+                <p>Tim Berners-Lee cria o HTML para compartilhar documentos científicos no CERN</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-year">1996</div>
+              <div class="timeline-content">
+                <h3>CSS Nível 1</h3>
+                <p>Primeira especificação CSS para separar conteúdo e apresentação</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-year">2000</div>
+              <div class="timeline-content">
+                <h3>XHTML 1.0</h3>
+                <p>Reformulação do HTML como aplicação XML</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-year">2014</div>
+              <div class="timeline-content">
+                <h3>HTML5</h3>
+                <p>Padrão finalizado trazendo novos elementos semânticos e APIs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="image-side">
+          <img src="./img/evolução.png" alt="Evolução da Web" class="content-image floating">
+          <p class="image-caption">Evolução das tecnologias web ao longo dos anos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="html">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fab fa-html5"></i> HTML - Estrutura da Web</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="content-flex reverse">
+        <div class="image-side">
+          <img src="./img/código.png" alt="Código HTML" class="content-image zoom-effect">
+          <p class="image-caption">Exemplo de estrutura HTML básica</p>
+        </div>
+        
+        <div class="text-side">
+          <h3>O que é HTML?</h3>
+          <p>HTML é a linguagem de marcação padrão para criar páginas web. Ele define a estrutura e o significado do conteúdo através de elementos e tags.</p>
+          
+          <div class="highlight-box">
+            <p><i class="fas fa-code"></i> HTML não é uma linguagem de programação, mas sim de marcação que estrutura o conteúdo da web.</p>
+          </div>
+          
+          <h3>Elementos Essenciais</h3>
+          <div class="code-grid">
+            <div class="code-card slide-in">
+              <h4>Estrutura Básica</h4>
+              <div class="code-box">
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <code>&lt;html&gt;</code>
+                <code>&lt;head&gt;...&lt;/head&gt;</code>
+                <code>&lt;body&gt;...&lt;/body&gt;</code>
+                <code>&lt;/html&gt;</code>
+              </div>
+            </div>
+            
+            <div class="code-card slide-in">
+              <h4>Cabeçalhos</h4>
+              <div class="code-box">
+                <code>&lt;h1&gt;Título&lt;/h1&gt;</code>
+                <code>&lt;h2&gt;Subtítulo&lt;/h2&gt;</code>
+                <code><span class="comment">&lt;!-- Até h6 --&gt;</span></code>
+              </div>
+            </div>
+            
+            <div class="code-card slide-in">
+              <h4>Links</h4>
+              <div class="code-box">
+                <code>&lt;a href="url"&gt;Texto&lt;/a&gt;</code>
+              </div>
+            </div>
+            
+            <div class="code-card slide-in">
+              <h4>Imagens</h4>
+              <div class="code-box">
+                <code>&lt;img src="imagem.jpg" alt="Texto"&gt;</code>
+              </div>
+            </div>
+            
+            <div class="code-card slide-in">
+              <h4>Listas</h4>
+              <div class="code-box">
+                <code>&lt;ul&gt;</code>
+                <code>  &lt;li&gt;Item&lt;/li&gt;</code>
+                <code>&lt;/ul&gt;</code>
+              </div>
+            </div>
+            
+            <div class="code-card slide-in">
+              <h4>Divisões</h4>
+              <div class="code-box">
+                <code>&lt;div class="classe"&gt;...&lt;/div&gt;</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="css">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fab fa-css3-alt"></i> CSS - Estilização da Web</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="content-flex">
+        <div class="text-side">
+          <h3>O que é CSS?</h3>
+          <p>CSS é a linguagem que descreve a apresentação de documentos HTML, controlando layout, cores, fontes e outros aspectos visuais.</p>
+          
+          <div class="highlight-box">
+            <p><i class="fas fa-paint-brush"></i> CSS permite separar completamente a estrutura (HTML) da apresentação (estilos), facilitando a manutenção.</p>
+          </div>
+          
+          <h3>Conceitos Fundamentais</h3>
+          <div class="concepts-grid">
+            <div class="concept-card slide-in">
+              <div class="concept-icon">
+                <i class="fas fa-magic"></i>
+              </div>
+              <h4>Seletores</h4>
+              <p>Padrões que selecionam elementos para estilização</p>
+              <div class="code-box small">
+                <code>p { } <span class="comment">/* Todos os parágrafos */</span></code>
+                <code>.classe { } <span class="comment">/* Por classe */</span></code>
+                <code>#id { } <span class="comment">/* Por ID */</span></code>
+              </div>
+            </div>
+            
+            <div class="concept-card slide-in">
+              <div class="concept-icon">
+                <i class="fas fa-box"></i>
+              </div>
+              <h4>Box Model</h4>
+              <p>Modelo que define margem, borda, preenchimento e conteúdo</p>
+              <div class="code-box small">
+                <code>margin: 10px;</code>
+                <code>padding: 20px;</code>
+                <code>border: 1px solid;</code>
+              </div>
+            </div>
+            
+            <div class="concept-card slide-in">
+              <div class="concept-icon">
+                <i class="fas fa-arrows-alt"></i>
+              </div>
+              <h4>Flexbox</h4>
+              <p>Modelo de layout unidimensional para design responsivo</p>
+              <div class="code-box small">
+                <code>display: flex;</code>
+                <code>justify-content: center;</code>
+                <code>align-items: center;</code>
+              </div>
+            </div>
+            
+            <div class="concept-card slide-in">
+              <div class="concept-icon">
+                <i class="fas fa-th"></i>
+              </div>
+              <h4>Grid</h4>
+              <p>Sistema de layout bidimensional para designs complexos</p>
+              <div class="code-box small">
+                <code>display: grid;</code>
+                <code>grid-template-columns: 1fr 1fr;</code>
+              </div>
+            </div>
+            
+            <div class="concept-card slide-in">
+              <div class="concept-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Media Queries</h4>
+              <p>Adapta o layout para diferentes tamanhos de tela</p>
+              <div class="code-box small">
+                <code>@media (max-width: 768px) { }</code>
+              </div>
+            </div>
+            
+            <div class="concept-card slide-in">
+              <div class="concept-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <h4>Animações</h4>
+              <p>Cria transições e animações sem JavaScript</p>
+              <div class="code-box small">
+                <code>transition: all 0.3s;</code>
+                <code>@keyframes anim { }</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="image-side">
+          <img src="./img/css.png" alt="Código CSS" class="content-image floating">
+          <p class="image-caption">Exemplo de código CSS moderno com Flexbox e Grid</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-laptop-code"></i> Meus Projetos</h2>
+        <div class="timeline-marker"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./img/hollow.jpg" alt="Primeiro Site" class="project-image zoom-effect">
+            <div class="project-overlay">
+              <a href="https://daniel-vara.github.io/Hollow-Knight/" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Primeiro Página</h3>
+            <p>Nesse projeto tinhamos que criar nossa primeira página web, com tema livre, utilizando apenas HTML e CSS, não precisava ser responsiva, e nem ter animações, apenas uma primeira página.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS </span>
+              <span class="tech-tag">Design bem estruturado</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./img/volei.webp" alt="Site sobre volley-responsivo" class="project-image zoom-effect">
+            <div class="project-overlay">
+              <a href="https://daniel-vara.github.io/Volley/" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Site responsivo</h3>
+            <p>Criar um segundo site com tema livre, que tinha que ser responsivo, ou seja, que se adaptasse para qualquer tela.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML & CSS</span>
+              <span class="tech-tag">Display Fles</span>
+              <span class="tech-tag">Responsividade</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./img/portfolio.webp" alt="Portifólio com Display Grid" class="project-image zoom-effect">
+            <div class="project-overlay">
+              <a href="https://daniel-vara.github.io/Portif-lio/" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfólio</h3>
+            <p>Criar um portfólio sobre mim, mostrando meus projetos e falando um pouco sobre mim, e era obrigatório o uso do Displya Grid.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML & CSS</span>
+              <span class="tech-tag">Responsividade</span>
+              <span class="tech-tag">Display Grid</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./img/restaurante.jpeg" alt="Site de um restaurante" class="project-image zoom-effect">
+            <div class="project-overlay">
+              <a href="https://daniel-vara.github.io/Sabores-da-Terra/" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Sabores da Terra</h3>
+            <p>Criar um site sobre um restaurante chamado Sabores da Terra, utilizando tudo que aprendemos até aquela época, e também utilizar inputs e ID's.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML & CSS</span>
+              <span class="tech-tag">Inputs & ID's</span>
+              <span class="tech-tag">Responsividade e Design</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./img/sistema.webp" alt="Sistema Solar" class="project-image zoom-effect">
+            <div class="project-overlay">
+              <a href="https://daniel-vara.github.io/Sistema-Solar/" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Sistema Solar</h3>
+            <p>Criar um sistema solar utilizando KeyFrames, para representar a rotação dos planetas.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML & CSS</span>
+              <span class="tech-tag">KeyFrames</span>
+              <span class="tech-tag">Display Flex</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./img/formas.webp" alt="Formas Geométricas" class="project-image zoom-effect">
+            <div class="project-overlay">
+              <a href="https://daniel-vara.github.io/Formass/" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Formas Geométricas</h3>
+            <p>Criar alguns objetos/desenhos, utilizando formas geométricas, e animações com KeyFrams.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML & CSS</span>
+              <span class="tech-tag">KeyFrames</span>
+              <span class="tech-tag">Clip-Path</span>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Daniel Vara</h3>
+      <p>Desenvolvendo soluções criativas e eficientes para a web.</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Links Rápidos</h3>
+      <div class="link-columns">
+
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="introdução.html">Introdução</a></li>
+        <li><a href="alan.html">Alan Turing</a></li>
+        <li><a href="ware.html">Hard & Software</a></li>
+    </ul>
+      <ul>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="figma.html">FIGMA</a></li>
+        <li><a href="git.html">GitHub</a></li>
+        <li><a href="HC.html">HTML & CSS</a></li>
+      </ul>
+      </div>
+      
+    </div>
+    
+    <div class="footer-section">
+      <h3>Conecte-se</h3>
+      <div class="social-links">
+        <a href="https://github.com/Daniel-Vara" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/daniel-vara-dos-santos-ribeiro-890403352/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/daniielvsr/?next=%2F" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Daniel Vara. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
