@@ -812,4 +812,8 @@ body {
   .certificates-grid {
     grid-template-columns: 1fr;
   }
+
+  .timeline-item::before {
+    display: none;
+  }
 }
